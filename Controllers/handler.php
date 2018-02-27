@@ -18,12 +18,11 @@ $admin_mail = 'alexey.dyatel@gmail.com';
 $userdata['user_mail']='dimasushimaster@gmail.com';
 // Email заказчика (как fallback - ваш же Email)
 $to = !empty($userdata['user_mail']) ? $userdata['user_mail'] : $admin_mail;
-
+$userdata['user_phone'] = preg_replace("/[^0-9]/", '', $userdata['user_phone']);
 // Формируем таблицу с заказанными товарами
 $tbl = '<table style="width: 100%; border-collapse: collapse;">
             <tr>
                 <th style="width: 1%; border: 1px solid #333333; padding: 5px;">ID</th>
-                <th style="width: 1%; border: 1px solid #333333; padding: 5px;"></th>
                 <th style="border: 1px solid #333333; padding: 5px;">Наименование</th>
                 <th style="border: 1px solid #333333; padding: 5px;">Цена</th>
                 <th style="border: 1px solid #333333; padding: 5px;">Кол-во</th>
@@ -34,7 +33,6 @@ foreach($orderlist as $id => $item_data) {
     $tbl .= '
             <tr>
                 <td style="border: 1px solid #333333; padding: 5px;">'.$item_data['id'].'</td>
-                <td style="border: 1px solid #333333;"><img src="'.$item_data['img'].'" alt="" style="max-width: 64px; max-height: 64px;"></td>
                 <td style="border: 1px solid #333333; padding: 5px;">'.$item_data['title'].'</td>
                 <td style="border: 1px solid #333333; padding: 5px;">'.$item_data['price'].'</td>
                 <td style="border: 1px solid #333333; padding: 5px;">'.$item_data['count'].'</td>
@@ -42,7 +40,7 @@ foreach($orderlist as $id => $item_data) {
 }
 $tbl .= '<tr>
                 <td  style="border: 1px solid #333333; padding: 5px;" colspan="3">Итого:</td>
-                <td style="border: 1px solid #333333; padding: 5px;"><b>'.$total_sum.'</b></td>
+                <td style="border: 1px solid #333333; padding: 5px;"><b>'.$total_sum.' грн.</b></td>
                 <td style="border: 1px solid #333333;">&nbsp;</td>
             </tr>
         </table>';
@@ -62,7 +60,7 @@ $body = '
             </ul>
             <p>Информация о заказае:</p>
           '.$tbl.'
-            <p>Письмо создано автоматически. Пожалуйста, не отвечайте на него, т.к. все ушли на пляж!</p>
+            <p>Письмо создано автоматически. Пожалуйста, наберите Леху (на всякий случай)</p>
         </body>
         </html>';
 
@@ -70,7 +68,7 @@ $body = '
 $headers   = []; // или $headers = array() для версии ниже 5.4
 $headers[] = 'MIME-Version: 1.0'; // Обязательный заголовок
 $headers[] = 'Content-type: text/html; charset=utf-8'; // Обязательный заголовок. Кодировку изменить при необходимости
-$headers[] = 'From: Доставка Суши Sakura.zt.ua'; // От кого
+$headers[] = 'From: <Sakura@zt.ua>'; // От кого
 $headers[] = 'Bcc: Admin <'.$admin_mail.'>'; // скрытая копия админу сайта, т.е. вам
 $headers[] = 'X-Mailer: PHP/'.phpversion();
 // Отправка

@@ -96,27 +96,59 @@ header{
 }
 
 /******************8*/
-.pic-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* height: 600px; */
-    overflow: hidden;
-    background: url('/Views/img/sakura-bg.jpg') no-repeat center top;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-size: cover!important;
+
+@media screen and (max-width: 430px) {
+    .pic-wrapper{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* height: 600px; */
+        overflow: hidden;
+        background: url('/Views/img/sakura-bg-mobile.jpeg') no-repeat center top;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-size: cover!important;
+
+    }
 }
-.pic-wrapper2 {
-    position: relative;
-    width: 100%;
-    height: 50vh;
-    /* height: 600px; */
-    overflow: hidden;
-    background: url('/Views/img/krabiko.jpg') no-repeat center top;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-size: cover!important;
+@media screen and (min-width: 431px) {
+    .pic-wrapper{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* height: 600px; */
+        background: url('/Views/img/sakura-bg.jpg') no-repeat center top;
+        overflow: hidden;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-size: cover!important;
+    }
+}
+@media screen and (min-width: 431px) {
+    .pic-wrapper2 {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        /* height: 600px; */
+        overflow: hidden;
+        background: url('/Views/img/mix-set.jpg') no-repeat center top;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-size: cover !important;
+    }
+}
+@media screen and (max-width: 430px) {
+    .pic-wrapper2 {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        /* height: 600px; */
+        overflow: hidden;
+        background: url('/Views/img/mix-set-mobile.jpeg') no-repeat center top;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-size: cover !important;
+    }
 }
 .pic-page {
     padding-left: 10px;
@@ -161,6 +193,11 @@ header{
 }
 .header_small1 {
     font-size: 50px!important;
+}
+@media screen and (max-width: 430px) {
+    .header_small1 {
+        font-size: 40px!important;
+    }
 }
 .header_big2 {
     margin-bottom: 30px;
@@ -560,7 +597,10 @@ footer{
 .footer-item .inst{
     color: #ff253a;
     font-size: 20px;
+    margin: 0px 5px;
+
 }
+
 
 
 @media screen and (max-width: 830px) {
@@ -704,6 +744,7 @@ footer{
     width: 100%;
     justify-content: center;
 }
+
 /**
 *** to do: form
 ****/

@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     var panelItem = document.getElementsByClassName('menu-category-title'),
     bodyItem = document.getElementsByClassName('burgers');
@@ -13,23 +12,20 @@ $(document).ready(function(){
         }
     });
 
-
     $(".menu-category-title").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
     
         //забираем идентификатор бока с атрибута href
         var id  = $( $(this).attr('href') );
-        console.log(id.offset);
+        //console.log(id.offset);
         
         //анимируем переход на расстояние - top за 1500 мс
         var top = $(id).offset().top;
-        console.log(top);
+        //console.log(top);
             
             $('html').animate({scrollTop: top - 60 }, 200, 'swing', function() { 
-           console.log("Finished animating burg");
-        
-            
+           //console.log("Finished animating burg");
         });
     });
     
@@ -74,9 +70,7 @@ $(document).ready(function(){
     });
     });
 
-
-
-    $(".go-menu, .footer-logo").on("click", function (event) {
+    $("#go-menu, .footer-logo").on("click", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 		event.preventDefault();
 
@@ -88,13 +82,9 @@ $(document).ready(function(){
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: rr}, 500, 'swing', function() { 
-           console.log("Finished animating");
+           //console.log("Finished animating");
         });
 	});
-
-
-
-
 
     // отркр модального окна
     // $('#basc').click( function(event){
@@ -117,7 +107,5 @@ $(document).ready(function(){
     //             }
     //         );
     // });
-	
-	
-    
+
 });
