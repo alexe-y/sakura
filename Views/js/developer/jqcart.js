@@ -15,7 +15,7 @@
     visibleLabel = false,
     label = $('<div class="jqcart-cart-label"><span class="jqcart-title"><i class="fas fa-shopping-basket"> </i> </span> &nbsp;<span class="jqcart-total-cnt"> 0</span></div>'),
       modal = '<div id="overlay"></div><div id="modal_form" class="jqcart-layout" ><div class="jqcart-checkout"></div></div>',
-    orderform = '<div id="form2"><p class="jqcart-cart-title-no">Контактная информация:</p><form class="jqcart-orderform"><p><label>ФИО:</label><input type="text" name="user_name"></p><p><label>Телефон:</label><input type="text" id="user_phone" name="user_phone"></p><p><label>Адрес:</label><input type="text" name="user_address"></p><p><label>Коментарий:</label><textarea name="user_comment"></textarea></p><p><button type="submit" class="btn btn-primary btn-basket" onclick="gtag_report_conversion()">Отправить заказ</button></p></form></div>';
+    orderform = '<div id="form2"><p class="jqcart-cart-title-no">Контактная информация:</p><form class="jqcart-orderform"><p><label>ФИО:</label><input type="text" name="user_name"></p><p><label>Телефон:</label><input type="text" id="user_phone" name="user_phone"></p><p><label>Адрес:</label><input type="text" name="user_address"></p><p><label>Коментарий:</label><textarea name="user_comment"></textarea></p><p><button type="submit" class="btn btn-primary btn-basket">Отправить заказ</button></p></form></div>';
   var opts = {
 		buttons: '.add_item',
 		cartLabel: 'body',
@@ -241,6 +241,7 @@
         },
         success: function(resp) {
           console.log("заказ принят");
+          gtag_report_conversion();
           $('.jqcart-checkout').html('<h2 class="jqcart-success">Спасибо!<br> Ваш заказ принят.</h2>');
             if(!resp.errors) {
                 setTimeout(methods.clearCart, 2000);

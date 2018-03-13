@@ -3,7 +3,7 @@ $(document).ready(function(){
     bodyItem = document.getElementsByClassName('burgers');
     panelItem.__proto__.forEach = [].__proto__.forEach;
 
-    var HeaderTop = $('#features').offset().top;
+    var HeaderTop = $('#features').offset().top-60;
     $(window).scroll(function(){
         if( $(window).scrollTop() > HeaderTop ) {
             $('header').addClass('fixedbar');

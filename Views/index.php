@@ -11,13 +11,18 @@
         gtag('config', 'UA-114659457-1');
     </script>
 
-    <title>Sakura - Доставка Суши в Житомире</title>
+    <title>Доставка Суши в Житомире - Sakura Sushi</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="Views/img/favicon.ico" />
-    <meta name=’description’ content=’Доставка вкусных суши в Житомире’ >
-    <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом’>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta name=’description’ content=’Доставка вкусных суши в Житомире на дом’ >
+    <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом, доставка суши, суши доставка, суші, суши в Житомирі’>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Доставка Суши в Житомире - Sakura Sushi">
+    <meta property="og:description" content="Вкуснейшие роллы с доставкой на дом. При заказе от 400грн доставка - бесплатно!">
+    <meta property="og:image" content="Views/img/SakuraSushi.jpg">
+    <meta property="og:site_name" content="Sakura.zt.ua">
+    <meta property="og:url" content="Sakura.zt.ua">
 
 </head>
 <body>
@@ -27,8 +32,8 @@
         <div class="header-wrap">
             <div class="logo header-item"><img src="Views/img/logo-light.png" alt=""></div>
             <div class="place header-item"><i class="fas fa-map-marker-alt"></i>&nbsp;Житомир</div>
-            <div class="tel header-item" ><i class="fas fa-phone"></i>&nbsp;<a href="tel:0733191640" style="color: black;" onclick="gtag_report_conversion()"> (073) 319 16 40</a></div>
-            <div class="basket header-item" id="basket"><!--<i class="fas fa-shopping-basket"></i><span class="jqcart-total-cnt"> x пусто</span>--></div>
+            <div class="tel header-item" ><i class="fas fa-phone"></i>&nbsp;<a href="tel:0733191640" style="color: black;" onclick="gtag_report_conversion2()"> (073) 319 16 40</a></div>
+            <div class="basket header-item" id="basket"><!--Значек корзины, подставляем из jqcart.js--></div>
         </div>
     </div>
 </header>
@@ -45,7 +50,6 @@
     </div>
 </div>
 <section id="features">
-    <div class="container">
         <div class="features-wrap">
                 <div class="feature-item">
                     <div class="feature-icon"><i class="fab fa-apple"></i></div>
@@ -69,15 +73,17 @@
                 </div>
             </div>
         </div>
-    </div>
+
 </section>
-<div class="pic-wrapper2">
+<div class="pic-wrapper">
     <div class="pic-page">
-        <div class="pic-headers2">
-            <h1 class="header_big header_big2">Микс набор со скидкой 15%</h1>
-            <h2 class="header_small header_small1">Всего 238грн.</h2>
+       
+        <div class="pic-headers">
+            <h2 class="header_big header_big2">Весна!</h2>
+            <h3 class="header_small">Радуйте себя и близких вкусными суши</h3>
         </div>
-        <button class="add_item go-menu" data-id="132" data-title="Микс набор" data-price="238"><span>В корзину</span></button>
+        
+        <a href="#category" class="go-menu" >Позвонить</a>
     </div>
 </div>
 <section id="category">
@@ -151,21 +157,6 @@
             </a>
         </div>
         <div  class=" burgers ">
-            <div class="burgers-item">
-                <img width="288" height="192" src="Views/img/miks-nabor-min_500x333.jpg" alt="Микс набор" >
-                <h6 class="item-title">
-                    <a href="#">Микс-набор</a>
-                </h6>
-                <p class="item-ingr">Овощной ролл, калифорния в икре с лососем, филадельфия в икре с лососем,
-                    крабико ролл. 800г.</p>
-                <del class="price">280 грн.</del>
-                <div class="item-price">
-                    <div class="price action">238 грн.</div>
-                    <div class="btn-cont">
-                        <button class="btn add_item btn-primary" data-id="132" data-title="Микс набор" data-price="238"><span>В корзину</span></button>
-                    </div>
-                </div>
-            </div>
         <?if(is_array($productList)):?>
             <?php foreach($productList as $product):?>
                 <?if($product['cat_id']==27):?>
@@ -382,14 +373,14 @@
                 </a>
             </div>
             <div class="footer-item">
-                <a href="https://www.facebook.com/groups/2003535999886621/" class="inst"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/sakura.zt.ua/" class="inst"><i class="fab fa-instagram"></i></a>
-                <a href="https://t.me/sakurasushi" class="inst"><i class="fab fa-telegram-plane"></i></a>
+                <a target="_blank" href="https://www.facebook.com/groups/2003535999886621/" class="inst"><i class="fab fa-facebook-square"></i></a>
+                <a target="_blank" href="https://www.instagram.com/sakura.zt.ua/" class="inst"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://t.me/sakurasushi" class="inst"><i class="fab fa-telegram-plane"></i></a>
             </div>
         </div>
        </div>
     </footer>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
     <script src="Views/js/jquery-1.11.3.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -428,7 +419,7 @@
             };
             gtag('event', 'conversion', {
                 'send_to': 'AW-834077880/cHNnCKXmjX4QuIncjQM',
-                'value': 100.0,
+                'value': 40.0,
                 'currency': 'UAH',
                 'transaction_id': '',
                 'event_callback': callback
@@ -436,7 +427,25 @@
             return false;
         }
     </script>
-    <script>$(document).ready(function() {
+
+    <!-- Event snippet for Звонок с сайта conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion2(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-834077880/TxH9CP7TmH4QuIncjQM',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+<script>$(document).ready(function() {
             $('#user_phone').mask('(000) 000-0000');
         });</script>
 </body>
