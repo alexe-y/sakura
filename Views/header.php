@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114659457-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-834077880');
+        gtag('config', 'UA-114659457-1');
+    </script>
+
+    <title>Доставка Суши в Житомире - Sakura Sushi</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="Views/img/favicon.ico" />
+     <meta name=’description’ content=’Доставка вкусных суши в Житомире на дом’ >
+    <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом, доставка суши, суши доставка, суші, суши в Житомирі’>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Доставка Суши в Житомире - Sakura Sushi">
+    <meta property="og:description" content="Вкуснейшие роллы с доставкой на дом. При заказе от 400грн доставка - бесплатно!">
+    <meta property="og:image" content="/Views/img/SakuraSushi.jpg">
+    <meta property="og:site_name" content="Sakura.zt.ua">
+    <meta property="og:url" content="Sakura.zt.ua">
+
+</head>
+<body>
+<link href="/Views/css/style.css" rel="stylesheet" type="text/css" />
+<header>
+        <div class="header-wrap">
+            <div class="place header-item"><svg class="svg-icon">
+                        <use xlink:href="#pin" />
+                    </svg>&nbsp;Житомир</div>
+            <div class="place header-item"><svg class="svg-icon">
+                        <use xlink:href="#clock" />
+                    </svg>&nbsp;9:00 - 23:00</div>        
+            <div class="logo header-item"><a href="/"><img src="/Views/img/logo-light.png" alt="Sakura"></a></div>
+        
+            <div class="tel header-item" ><svg class="svg-icon">
+                        <use xlink:href="#call" />
+                    </svg>&nbsp;<a href="tel:0733191640" style="color: black;" onclick="gtag_report_conversion2()"> <span class="place">(073) 319 16 40</span></a></div>
+            <div class="basket header-item" id="basket"> <!--Значек корзины, подставляем из jqcart.js--></div>
+        </div>
+</header>
+<?php include ROOT.'/Views/sprite.php';?> 

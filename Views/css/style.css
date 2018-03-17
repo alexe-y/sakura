@@ -22,8 +22,6 @@ body{
 }
 .clearfix:after{clear: both}
 
-/******************************************************************/
-
 .container{
     max-width: 900px;
     margin: 0 auto;
@@ -43,30 +41,34 @@ header{
 }
 
 .fixedbar{
-    height: 60px;
+    height: 10vh;
 }
 .header-wrap{
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap;
-    height: 60px;
+    height: 100%;
 }
-
+ .header-wrap .logo{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
 .header-item{
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 20%;
+    max-width: 20%;
     margin: auto;
     text-align: center;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
 }
-
 .basket{
     cursor: pointer;
-
 }
 .header-item img{
     height: 45px;
-}
-.header-wrap .basket{
-    height: 75%;
 }
 .header-wrap .basket .jqcart-cart-label{
     display: flex;
@@ -74,24 +76,17 @@ header{
     align-items: center;
     justify-content: center;
 }
-
 @media screen and (max-width: 830px) {
-    .header-wrap .logo{
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
+    
     .header-wrap .place{
         display: none;
     }
     .header-wrap .tel{
-        flex: 0 0 50%;
-        max-width: 50%;
-        font-size: 16px;
+        order: 0;
     }
-    .header-wrap .basket{
-        flex: 0 0 30%;
-        max-width: 30%;
-        height: 75%;
+    .header-item{
+        flex: 0 0 33%;
+        order: 1;
     }
 }
 
@@ -109,7 +104,7 @@ header{
         background-attachment: fixed;
         background-size: cover;
         overflow: hidden;
-
+        display: flex;
     }
 }
 @media screen and (min-width: 431px) {
@@ -126,10 +121,29 @@ header{
         background-size: cover;
 
         overflow: hidden;
-
+        display: flex;
     }
 }
-
+@media screen and (max-width: 430px) {
+    .pic-wrapper2{
+         background-image: url("/Views/img/action-bg-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 431px) {
+    .pic-wrapper2{
+        background-image: url("/Views/img/action-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
 .pic-page {
    margin: auto;
 
@@ -162,7 +176,7 @@ header{
 
 .header_small {
     font-size: 26px;
-    margin: 0 auto!important;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -195,7 +209,12 @@ header{
     transform: rotate(-45deg);
     width: 9px;
 }
-
+#header_menu_small{
+    margin-bottom: 30px;
+}
+#header_menu_small:before, #header_menu_small:after{
+    box-shadow: 1px 1px 2px black;
+}
 .go-menu{
     width: 30%;
     position: relative; 
@@ -219,15 +238,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 .go-menu:hover{
     letter-spacing: 1px;
     background: #eee;
     color: #fff;
 }
-
 @media screen and (max-width: 830px) {
     .header_big {
         font-size: 34px;
@@ -244,8 +261,13 @@ header{
     }
 }
 /*******************/
-
-
+/*#features{
+    background-image: url("/Views/img/pink-bg.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        overflow: hidden;
+}*/
 .features-wrap{
     display:-webkit-flex;
     display: flex;
@@ -255,31 +277,30 @@ header{
 .feature-item{
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
-    padding: 35px 20px 0 20px;
+    padding: 35px 0px 20px 20px;
     position: relative;
     text-align: center;
 }
 .feature-icon{
     display: inline-block;
     position: absolute;
-    left: 40%;
+    left: 45%;
     top: -15%;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     font-size: 40px;
     color: #ff253a;
 }
-
 .feature-text{
     line-height: 24px;
     margin-top: 5px;
+    margin-bottom: 15px;
 }
-
 .feature-title{
+    margin-top: 15px;
     font-size: 26px;
     line-height: 30px;
 }
-
 @media screen and (max-width: 830px) {
     .features-wrap{
         margin: auto;
@@ -291,7 +312,7 @@ header{
         padding: 50px 10px 0 10px;
     }
     .feature-icon{
-        left: 45%;
+        left: 40%;
         top: 0;
     }
     #features {
@@ -308,18 +329,15 @@ header{
     }
 }
 /******************/
-
 section#category{
     padding: 35px 0;
     background: #fff;
 }
-
 .menu-category{
     border-radius: 10px;
     overflow: hidden;
     margin: 10px 0;
 }
-
 .menu-category-title{
 	position: relative;
     height: 25vh;
@@ -336,11 +354,8 @@ section#category{
     bottom: 3rem;
     right: 3rem;
     transform: rotate(90deg) rotateY(180deg);
-    
-    
     display: inline-block;
     font-size: 3rem;
-    
     opacity: 0.5;
     z-index: 2;
     -webkit-transition: all 0.25s ease-out;
@@ -348,13 +363,9 @@ section#category{
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
 }
-
 .menu-category-title.active:after{
-    
     transform: rotate(90deg) rotateY(0);
 }
-
-
 #cat_firm .menu-category-title .bg-image{
     background-image: url('/Views/img/firm.jpg');
 }
@@ -385,7 +396,6 @@ section#category{
     background-repeat: no-repeat;
     z-index: 0;
 }
-
 .menu-category-title .bg-image:after{
 	position: absolute;
     top: 0;
@@ -395,7 +405,6 @@ section#category{
     content: ' ';
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
 }
-
 .menu-category-title .title{
 	z-index: 10;
     position: absolute;
@@ -404,18 +413,14 @@ section#category{
     font-size: 3rem;
     color: #f4f4f4;
 }
-
-
 .burgers{
 	display: flex;
 	flex-wrap: wrap;
     background-color: #fff;
     transition: .3s ease;
-
     max-height: 0px;
     overflow: hidden;
 }
-
 .active{
     height: 35vh;
 }
@@ -430,10 +435,9 @@ section#category{
 }
 .burgers-item img{
 	width: 100%;
-    height: auto;
     border-radius: 5px;
+    height: auto;
 }
-
 .item-title a{
 	font-size: 1.1rem;
     font-weight: 500;
@@ -458,9 +462,7 @@ section#category{
     font-size: 1.1rem;
 }
 .action{
-
     color: #e54343 !important;
-
 }
 .btn-cont{
 	text-align: right;
@@ -543,6 +545,13 @@ section#category{
     .burgers-item{
         max-width: 50%;
     }
+    .btn{
+        font-size: 0.8em;
+    }
+    .btn-primary:hover{
+    letter-spacing: normal;
+    color: #fff;
+}
 } 
 
 
@@ -550,47 +559,61 @@ section#category{
 
 footer{
     color: #8d8f94;
-    height: 90px;
+    height: 30vh;
     background: #282b2e;
 }
 .footer-wrap{
     display: flex;
     flex-wrap: wrap;
-    height: 90px;
+    height: 100%;
     flex-wrap: wrap;
 }
-.footer-item{
+.footer-block{
     flex: 0 0 33.333333%;
-    max-width: 33.333333%;
     text-align: center;
     margin: auto;
 }
-.footer-item img{
-    height: 60px;
+.footer-block img{
+    height: 80px;
 }
 
-.footer-item .inst{
+.footer-item{
     color: #ff253a;
-    font-size: 20px;
-    margin: 0px 5px;
-
+    font-size: 24px;
+    padding: 20px;
+    line-height: 2;
 }
-
-
-
 @media screen and (max-width: 830px) {
-    .footer-item:first-child{
-        display: none;
-    }
     footer,
     .footer-wrap{
-        height: 50px;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: space-around;
     }
-    .footer-item img{
-        height: 40px;
+    .footer-block{
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer-wrap :nth-child(3){
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer-item{
+       padding: 5px; 
+    }
+    .footer-link{
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    line-height: 1;
     }
 }
-
+#telegram, #instagram, #facebook{
+    fill: #ff253a;
+    padding: 10px;
+}
 
 /****************************/
 #modal_form {
@@ -783,3 +806,32 @@ footer{
         margin-left: -45%;
     }
 }
+@media screen and (min-width: 830px) {
+    .pc-hidden{
+        display: none;
+    }
+}
+iframe{
+    width: 100%;
+    height: 90vh;
+}
+.header-item .svg-icon{
+    fill: #313131;
+    height: 30px;
+    width: 30px;
+}
+.svg-icon{
+    fill: #ff253a;;
+    height: 30px;
+    width: 30px;
+}
+#features .svg-icon{
+    fill: #ff253a;
+    height: 70px;
+    width: 70px;
+}
+.animate{
+    fill: #ff253a!important;
+}
+
+
