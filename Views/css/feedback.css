@@ -29,6 +29,7 @@ body {
 ol, ul {
   list-style: none;
 }
+a,a:hover{text-decoration: none; color: inherit;}
 blockquote, q {
   quotes: none;
 }
@@ -309,7 +310,7 @@ Main components
 .cd-testimonials-all .cd-testimonials-all-wrapper > ul {
   width: 90%;
   max-width: 1170px;
-  margin: 6em auto;
+  margin: 9em auto;
 }
 .cd-testimonials-all .cd-testimonials-all-wrapper > ul::after {
   clear: both;
@@ -438,4 +439,38 @@ Main components
 #header_feedback_small{
   text-shadow: none;
   margin-bottom: 60px;
+}
+.feedback-wrapper{
+  font-size: 1.3em;
+  position: relative;
+  top: 15vh;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+}
+.feedback-wrapper>input, .feedback-wrapper>textarea {
+  margin: 10px auto;
+  border: 1px solid #cccccc; 
+   border-radius: 3px; 
+   -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px; 
+   -khtml-border-radius: 3px; 
+   background: #ffffff !important; 
+   padding: 0 5px;
+   width: 70%;
+}
+.feedback-wrapper>button{
+  width: 70%;
+  margin: auto;
+}
+@media only screen and (min-width: 830px) {
+  .feedback-wrapper>input, .feedback-wrapper>textarea {
+    width:50%;
+  }
+  .feedback-wrapper>button{
+  width: 50%;
+  margin: auto;
+  }
 }

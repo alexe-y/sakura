@@ -1,7 +1,5 @@
 <section id="category">
     <div class="container">
-        <h2 class="header_big" id="header_menu">Меню</h2>
-            <h3 class="header_small" id="header_menu_small">Суши и роллы на любой вкус</h3>
     <div id="cat_firm" class="menu-category">
         <div class="menu-category-title">
             <a href="#cat_firm">
@@ -15,7 +13,7 @@
                 <?if($product['cat_id']==29):?>
 
                     <div class="burgers-item">
-                        <img width="288" height="192" src="Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
+                        <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
                         <h6 class="item-title">
                             <a href="#"><?echo $product['title']?></a>
                         </h6>
@@ -46,7 +44,7 @@
                 <?if($product['cat_id']==30):?>
 
                     <div class="burgers-item">
-                        <img width="288" height="192" src="Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
+                        <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
                         <h6 class="item-title">
                             <a href="#"><?echo $product['title']?></a>
                         </h6>
@@ -73,18 +71,18 @@
         <div  class=" burgers ">
 
              <div class="burgers-item">
-                        <img width="288" height="192" src="Views/img/huyase-nabor-min_500x333.jpg" alt="Хуясэ набор" >
+                        <img width="288" height="192" src="/Views/img/_mg_8995-kopiya-min_500x333.jpg" alt="Киото набор" >
                         <h6 class="item-title">
-                            <a href="#">Хуясэ набор</a>
+                            <a href="#">Киото набор</a>
                         </h6>
-                        <p class="item-ingr">Хуясэ ролл, чиз ролл, острый осьминог, футомаки с креветкой, маки лосось,
-филадельфия в икре с угрем. 1150г.</p>
-<del class="price" >435 грн.</del>
+                        <p class="item-ingr">Красный дракон, маки с креветкой, филадельфия с тунцом, филадельфия с
+копченым лососем в кунжуте. 750г</p>
+<!-- <del class="price"> 385 грн. </del> -->
                         <div class="item-price">
                             
-                             <div class="price action">392 грн.</div>
+                             <div class="price action"> 347 грн. </div>
                             <div class="btn-cont">
-                                <button class="btn add_item btn-primary" data-id="130" data-title="Хуясэ набор" data-price="392"><span>В корзину</span></button>
+                                <button class="btn add_item btn-primary" data-id="135" data-title="Киото набор" data-price="347"><span>В корзину</span></button>
                             </div>
                         </div>
                     </div>
@@ -93,7 +91,7 @@
                 <?if($product['cat_id']==27):?>
 
                     <div class="burgers-item">
-                        <img width="288" height="192" src="Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
+                        <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
                         <h6 class="item-title">
                             <a href="#"><?echo $product['title']?></a>
                         </h6>
@@ -123,7 +121,7 @@
                 <?if($product['cat_id']==26):?>
 
                     <div class="burgers-item">
-                        <img width="288" height="192" src="Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
+                        <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
                         <h6 class="item-title">
                             <a href="#"><?echo $product['title']?></a>
                         </h6>
@@ -152,7 +150,7 @@
             <?php foreach($productList as $product):?>
                 <?if($product['cat_id']==25):?>
                     <div class="burgers-item">
-                        <img width="288" height="192" src="Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
+                        <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
                         <h6 class="item-title">
                             <a href="#"><?echo $product['title']?></a>
                         </h6>
@@ -182,7 +180,7 @@
                         <?if($product['cat_id']==0):?>
 
                             <div class="burgers-item">
-                                <img width="288" height="192" src="Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
+                                <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
                                 <h6 class="item-title">
                                     <a href="#"><?echo $product['title']?></a>
                                 </h6>

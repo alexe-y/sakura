@@ -1,13 +1,13 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="/Views/css/feedback.css">
     <link rel="stylesheet" href="/Views/css/article.css">
     <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
     <script src="/Views/js/jquery-1.11.3.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="/Views/js/main.js"></script>
     <script src="/Views/js/jquery.mask.min.js"></script>
     <script src="/Views/js/developer/jqcart.js"></script>
     <script src="/Views/js/jquery.flexslider-min.js"></script>
+    <!--Подключаем плагин корзины-->
     <script>
         $(function(){
             'use strict';
@@ -29,8 +29,7 @@
             });
         });
     </script>
-    <!-- Event snippet for Конверсия покупок conversion page
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <!--Функция отслеживания конверсии ПОКУПКИ Analytics-->
     <script>
         function gtag_report_conversion(url) {
             var callback = function () {
@@ -48,9 +47,7 @@
             return false;
         }
     </script>
-
-    <!-- Event snippet for Звонок с сайта conversion page
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<!--Функция отслеживания конверсии ЗВОНКА Analytics-->
     <script>
         function gtag_report_conversion2(url) {
             var callback = function () {
@@ -65,9 +62,9 @@
             return false;
         }
     </script>
-
-<script>$(document).ready(function() {
+<!--Маска номера телефона-->
+    <script>$(document).ready(function() {
             $('#user_phone').mask('(000) 000-0000');
-        });</script>
-</body>
+        });
+    </script>
 </html>

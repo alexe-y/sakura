@@ -51,7 +51,7 @@
 }
 
 .article-image {
-  background: #eee;
+  background: #fff;
   display: block;
   position: relative;
   width: 100%;
@@ -60,8 +60,9 @@
 
 .article-image img {
   display: block;
-  height: 100%;
+  /*max-height: 50vh;*/
   width: 100%;
+  margin: auto;
   /*left: 0;
   position: absolute;
   top: 0;*/
@@ -134,4 +135,16 @@
   .nested-column_artice {
     flex: 2;
   }
+}
+.social-buttons{
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  margin: 10px auto;
+}
+.social-buttons p{
+  flex: 0 0 50%;
+}
+.social-buttons .ya-share2{
+  flex: 0 0 50%;
 }

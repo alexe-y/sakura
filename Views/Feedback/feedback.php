@@ -1,5 +1,14 @@
+ 
  <div class="cd-testimonials-all">
     <div class="cd-testimonials-all-wrapper">
+         <form class="feedback-wrapper">
+        <label>Оставить отзыв</label>
+        <input required="required" placeholder="ФИО"/>
+        <input required="required" placeholder="Телефон" id="user_phone"/>
+        <input placeholder="E-mail"/>
+        <textarea placeholder="Отзыв" rows="5" required="required"></textarea>
+        <button type="submit" class="btn">Отправить</button>
+     </form>
         <ul style="position: relative; height: 2212px;">
             <li class="cd-testimonials-item">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam saepe iste maiores neque animi molestias nihil illum nisi temporibus.</p>
@@ -27,3 +36,4 @@
         </ul>
     </div>  <!-- cd-testimonials-all-wrapper -->
 </div>
+ 

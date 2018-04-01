@@ -1,14 +1,13 @@
-
 <div class="pic-wrapper">
-    <div class="pic-page">
+    <div class="pic-page" data-velocity="-0.5">
         <a href="/" id="pic-logo"></a>
 
         <div class="pic-headers">
-            <h1 class="header_big">Пожалуй, лучшие суши в городе</h1>
-            <h2 class="header_small">С доставкой домой</h2>
+            <h1 class="header_big">Закажите свежие суши и роллы сейчас  </h1>
+            <h2 class="header_small">Доставим до двери<br> за 45 минут</h2>
         </div>
         
-        <a href="#category" class="go-menu" id="go-menu">Меню</a>
+        <a href="#category" class="go-menu" id="go-menu">B Меню</a>
     </div>
 </div>
 <section id="features">
@@ -28,7 +27,7 @@
                     </svg></div>
                     <div class="feature-content">
                         <h4 class="feature-title">Быстро доставим!</h4>
-                        <p class="feature-text">Вжух, и через 40 минут уже наслаждаетесь вкуснейшим роллом Стоимость доставки 40грн.</p>
+                        <p class="feature-text">Вжух, и через 45 минут уже наслаждаетесь вкуснейшим роллом Стоимость доставки 40грн.</p>
                     </div>
                 </div>
             <div class="feature-item">
@@ -47,11 +46,13 @@
     <div class="pic-page">
        
         <div class="pic-headers">
-            <h2 class="header_big">Хуясэ набор - 10%</h2>
-            <h3 class="header_small">6 роллов, 48 кусочков, 1150г - всего 392грн!</h3>
+            <h2 class="header_big">Киото набор - 10%</h2>
+            <h3 class="header_small"><ul><li>Красный дракон</li> 
+                <li>маки с креветкой</li> <li>филадельфия с тунцом</li> <li>филадельфия с
+копченым лососем в кунжуте</li></ul>  = 347грн!</h3>
         </div>
         
-        <button class="add_item go-menu" data-id="130" data-title="Хуясэ набор" data-price="392"><span>В корзину</span></button>
+        <button class="add_item go-menu" data-id="135" data-title="Киото набор" data-price="347"><span>В корзину</span></button>
     </div>
 </div>
 
