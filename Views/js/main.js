@@ -64,10 +64,13 @@ $(document).ready(function(){
 			rr = $(gg).offset().top;
 		
 		//анимируем переход на расстояние - top за 1500 мс
-		$('body,html').animate({scrollTop: rr}, 500, 'swing', function() { 
+		$('body,html').delay(1000).animate({scrollTop: rr}, 500, 'swing', function() { 
            //console.log("Finished animating");
         });
 	});
+     $(".svg-border").on("click", function (event) {
+        $(".map-content").addClass('hide');
+    });
 //Слайдер отзывов
     $('.cd-testimonials-wrapper').flexslider({
         selector: ".cd-testimonials > li",

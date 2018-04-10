@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114659457-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-834077880');
-        gtag('config', 'UA-114659457-1');
-    </script>
-
-    <title>Доставка Суши в Житомире - Sakura Sushi</title>
-
-    <link rel="shortcut icon" type="image/x-icon" href="Views/img/favicon.ico" />
-     <meta name=’description’ content=’Доставка вкусных суши в Житомире на дом или в офис. Стоимость доставки 40грн по городу, от 400грн - бесплатно. Закажи ролл дня со скидкой 10%’ >
+    <title><?if(isset($article)):?><?=$article['meta_title']?><?else:?>Наш суши-блог - интересно про вкусное<?endif?></title>
+    <link rel="shortcut icon" type="image/x-icon" href="/Views/img/favicon.ico" />
+    <meta name='title' content='<?if(isset($article)):?><?=$article['meta_title']?><?else:?>Наш суши-блог - интересно про вкусное<?endif?>'>
+     <meta name=’description’ content=’<?if(isset($article)):?><?=$article['meta_description']?><?else:?>Пишем про нашу доставку суши, чем мы отличаемся от других и много интересных фактов о суши<?endif?>’ >
     <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом, доставка суши, суши доставка, суші, суши в Житомирі’>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Доставка Суши в Житомире - Sakura Sushi">
-    <meta property="og:description" content="Вкуснейшие роллы с доставкой на дом. Стоимость доставки 40грн по городу, от 400грн - бесплатно. Закажи ролл дня со скидкой 10%">
+    <meta property="og:title" content="Узнайте 7 преимуществ нового сервиса «Сакура Суши» в Житомире и закажите доставку излюбленных блюд японской кухни. Отличное суши-меню, свежие продукты, безупречное приготовление. Звоните или заказывайте online">
     <meta property="og:image" content="sakura.zt.ua/Views/img/SakuraSushi.jpg">
     <meta property="og:site_name" content="Sakura.zt.ua">
     <meta property="og:url" content="Sakura.zt.ua">
-
 </head>
 <body>
-<link href="/Views/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/Views/css/header.css" rel="stylesheet" type="text/css" />
+<link href="/Views/css/article.css" rel="stylesheet" type="text/css" />
 <?php include ROOT.'/Views/sprite.php';?> 
 <header>
         <div class="header-wrap">
@@ -36,7 +25,7 @@
             <div class="place header-item" ><svg class="svg-icon">
                         <use xlink:href="#clock" />
                     </svg>&nbsp;11:00 - 24:00</div>        
-            <div class="logo header-item"><img src="/Views/img/logo-light.png" alt="Sakura"></div>
+            <div class="logo header-item"><a href="/"><img src="/Views/img/logo-light.png" alt="Sakura"></a></div>
         
             <div class="tel header-item" ><svg class="svg-icon">
                         <use xlink:href="#call" />

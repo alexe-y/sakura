@@ -279,9 +279,14 @@
 		},
     setStorage: function(o) {
       localStorage.setItem('jqcart', JSON.stringify(o));
+      //localStorage.setItem('initTime', +new Date()); //Время добавления в корзину
       return false;
     },
     getStorage: function() {
+      // var limit = 24 * 3600 * 1000; // 24 часа
+      // var localStorageInitTime = localStorage.getItem('InitTime'); 
+      //   if(+new Date() - localStorageInitTime > limit) //Проверяем на актуальность корзины
+      //       localStorage.clear();
       return JSON.parse(localStorage.getItem('jqcart'));
     }
   };

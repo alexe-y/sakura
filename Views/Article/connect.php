@@ -1,5 +1,6 @@
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="/Views/css/article.css">
+    <link rel="stylesheet" href="/Views/css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
     <script src="/Views/js/jquery-1.11.3.min.js"></script>
     <script src="/Views/js/jquery.mask.min.js"></script>

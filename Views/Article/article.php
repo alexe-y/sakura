@@ -1,25 +1,31 @@
-<div class="container" style="margin-top: 10vh;"><figure class="article-image is-4by3">
-        <img src="/Views/img/sakurasushi.jpg" alt="">
-      </figure>
-      <div class="article-body">
-        <h2 class="article-title">
-          Hello World
-        </h2>
-        <p class="article-content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
-        </p>
-        <div class="article-info">
-          <span>By Joe Smith</span>
-          <span>3 comments</span>
-        </div>
-</div>
-<div class="social-buttons">
-<p>Понравилась статья? Поделись с друзьями:</p>
- <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-<script src="//yastatic.net/share2/share.js"></script>
-<div class="ya-share2" data-services="facebook,odnoklassniki,viber,whatsapp,telegram"></div>
-</div>
+<section class="article articles-container articles-margin">
+      <div class="articles-content">
+          <div class="articles-header">
+              <h2 class="articles-title">
+                <?=$article['title_h2']?>
+              </h2>
+          </div>
+          <div class="articles-text">
+              <?=$article["text"];?>
+          </div>
+          <div class="articles-footer">
+              <span><?=$article['date']?></span>
+              <span style="text-align: right;">
+                    <div class="social-buttons">
+                    <p>Понравилась статья? Поделись с друзьями:</p>
+                     <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                    <script src="//yastatic.net/share2/share.js"></script>
+                    <div class="ya-share2" data-services="facebook,odnoklassniki,viber,whatsapp,telegram"></div>
+                    </div>
+              </span>
+          </div>
+      </div>
+      <figure class="articles-image">
+        <h1 class="articles-header"><?=$article['title_h1']?></h1>
+          <img src="/Views/img/<?=$article['img']?>" alt="">
+      </figure> 
+</section>
+
       <!--HyperComments-->
 <div id="hypercomments_widget"></div>
 <script type="text/javascript">

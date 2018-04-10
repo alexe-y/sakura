@@ -1,11 +1,11 @@
 <footer>
         <div class="footer-wrap">
             <div class="footer-block">
-               <!--  <a href="about/" class="footer-item">Доставка и оплата</a>
-                <a href="feedback/" class="footer-item">Отзывы</a>
-                <a href="product/" class="footer-item">Меню</a>
-                <a href="product/" class="footer-item">Контакты</a>
-                <a href="article/" class="footer-item">Полезно знать</a>   -->
+                <!-- <a href="/about/" class="footer-item">Доставка и оплата</a> -->
+                <!-- <a href="/feedback/" class="footer-item">Отзывы</a> -->
+                <!-- <a href="/product/" class="footer-item">Меню</a>
+                <a href="/product/" class="footer-item">Контакты</a>   -->
+                <a href="/article/" class="footer-item">Полезно знать</a>
             </div>
             <div class="footer-block">
                 <a href="#features" class="footer-logo footer-item">

@@ -5,11 +5,11 @@
         <h3 class="header_small" id="header_feedback_small" > </h3> 
         <ul class="cd-testimonials">
             <li>
-                <p>Очень крутой сайт, рекомендую, очень много интересных уроков для начинающих и профи!.</p>
+                <p>Попробовали сегодня! Супер!!! Всем рекомендую!!! </p>
                 <div class="cd-author">
                     <ul class="cd-author-info">
-                        <li>Давид Барто</li>
-                        <li>14/04/2018</li>
+                        <li>Елена Саенко</li>
+                        <li>02/04/2018</li>
                     </ul>
                 </div>
             </li>
