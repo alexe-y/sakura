@@ -1,25 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alexe
- * Date: 31.01.2018
- * Time: 18:03
- */
-
 class Order
 {
     public static function addOrder($orderList, $userdata, $total_sum)
     {
         $db = db::getInstance()->db;
-        $result = $db->query('INSERT INTO order (add_date, name_buyer, phone, address, user_comment, summ) VALUES ('.date("Y-m-d H:i:s").', :name, :phone, :address,  :user_comment, :summ)');
+        $result = $db->prepare('INSERT INTO orders (name_buyer, phone, address, user_comment, summ, order_content) VALUES (:name, :phone, :address,  :user_comment, :summ, :orderlist)');
         $result->execute(array(
             'name'=>$userdata['user_name'],
             'phone'=>$userdata['user_phone'],
             'address'=>$userdata['user_address'],
             'user_comment'=>$userdata['user_comment'],
-            'orderlist'=>$orderList,
             'summ'=>$total_sum,
-
+            'orderlist'=>$orderList,
         ));
         return true;
     }

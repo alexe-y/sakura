@@ -1,0 +1,792 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"oe",
+				"orderList"
+			],
+			[
+				"order",
+				"orderlist"
+			],
+			[
+				"ar",
+				"articleList"
+			],
+			[
+				"a",
+				"article"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"m",
+				"minBuy"
+			],
+			[
+				"c",
+				"courses"
+			],
+			[
+				"co",
+				"courses"
+			],
+			[
+				"curr",
+				"currency"
+			],
+			[
+				"fee",
+				"feedbackList"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"F",
+				"FeedbackController"
+			],
+			[
+				"isa",
+				"is_array"
+			],
+			[
+				"get",
+				"getdate"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"tit",
+				"title_h2"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"fl",
+				"flex-flow"
+			],
+			[
+				"fle",
+				"flex-flow"
+			],
+			[
+				"article-",
+				"article-header"
+			],
+			[
+				"t",
+				"title"
+			],
+			[
+				"cu",
+				"currency_second"
+			],
+			[
+				"cur",
+				"currency_first"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"p",
+				"pointer"
+			],
+			[
+				"ad",
+				"addClass"
+			],
+			[
+				"w",
+				"white"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"r",
+				"rows\tAttr"
+			],
+			[
+				"btn-",
+				"btn-back"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"svg",
+				"svg-icon"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"hi",
+				"height\tAttr"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"foo",
+				"footer-link"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"hea",
+				"header_feedback"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"di",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"last_filter": " install pa",
+		"selected_items":
+		[
+			[
+				" install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"insall ",
+				"Install Package Control"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/projects/deep-sushi",
+		"/C/projects/deep-sushi/config",
+		"/C/projects/deep-sushi/Controllers",
+		"/C/projects/deep-sushi/Models",
+		"/C/projects/deep-sushi/Views",
+		"/C/projects/deep-sushi/Views/Article",
+		"/C/projects/deep-sushi/Views/css",
+		"/C/projects/deep-sushi/Views/Feedback",
+		"/C/projects/deep-sushi/Views/js",
+		"/C/projects/deep-sushi/Views/js/developer"
+	],
+	"file_history":
+	[
+		"/C/projects/deep-sushi/Views/js/developer/jqcart.js",
+		"/C/projects/deep-sushi/Views/js/main.js",
+		"/C/projects/deep-sushi/Views/connect.php",
+		"/C/projects/deep-sushi/Views/Article/connect.php",
+		"/C/projects/deep-sushi/Views/css/header.css",
+		"/C/projects/deep-sushi/Views/Feedback/header.php",
+		"/C/projects/deep-sushi/Views/Article/header.php",
+		"/C/projects/deep-sushi/Views/header.php",
+		"/C/projects/deep-sushi/Views/promo.php",
+		"/C/projects/deep-sushi/Controllers/LandingController.php",
+		"/C/projects/deep-sushi/Views/about.php",
+		"/C/projects/deep-sushi/Views/css/style.css",
+		"/C/projects/deep-sushi/Views/location.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-3/about.php",
+		"/C/projects/deep-sushi/Views/css/article.css",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/LandingController.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/promo.php",
+		"/C/projects/deep-sushi/Controllers/OrderController.php",
+		"/C/projects/deep-sushi/Controllers/handler.php",
+		"/C/projects/deep-sushi/Models/Order.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Models/Client.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Models/Cash.php",
+		"/C/projects/deep-sushi/config/routes.php",
+		"/C/projects/crb/config/routes.php",
+		"/C/projects/crb/Views/header.php",
+		"/C/projects/crb/Models/Article.php",
+		"/C/projects/deep-sushi/Views/Article/index.php",
+		"/C/projects/crb/Views/article.php",
+		"/C/projects/crb/Views/index.php",
+		"/C/projects/crb/Controllers/MainController.php",
+		"/C/projects/crb/Views/css/style.css",
+		"/C/projects/crb/Views/currency-info.php",
+		"/C/projects/crb/Controllers/CurrencyController.php",
+		"/C/projects/crb/Models/Currency.php",
+		"/C/projects/crb/Models/Exmo.php",
+		"/C/projects/crb/Models/Yobit.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/products.php",
+		"/C/projects/deep-sushi/Controllers/O",
+		"/C/projects/deep-sushi/Views/Feedback/feedback.php",
+		"/C/projects/deep-sushi/Views/css/feedback.css",
+		"/C/projects/deep-sushi/Views/feedback.php",
+		"/C/projects/deep-sushi/Models/Feedback.php",
+		"/C/projects/deep-sushi/Controllers/FeedbackController.php",
+		"/C/projects/deep-sushi/Models/Client.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Controllers/CashController.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Models/Item.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Controllers/ItemController.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Views/modalAddCash.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Views/cash.php",
+		"/C/projects/deep-sushi/Views/Feedback/connect.php",
+		"/C/projects/deep-sushi/Controllers/ArticleController.php",
+		"/C/projects/deep-sushi/jqcart.js",
+		"/C/projects/crb/Views/js/script.js",
+		"/C/projects/deep-sushi/Views/footer.php",
+		"/C/projects/deep-sushi/Models/Article.php",
+		"/C/projects/deep-sushi/Views/article.php",
+		"/C/projects/deep-sushi/Views/Article/article.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Controllers/ProductController.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/config/routes.php",
+		"/C/projects/myorders.deep-sushi.com.ua/config/routes.php",
+		"/C/projects/deep-sushi/db_params.php",
+		"/C/projects/test/Views/js/developer/jqcart.js",
+		"/C/projects/deep-sushi/Views/css/article2.css",
+		"/C/projects/deep-sushi/Views/css/footer.css",
+		"/C/projects/deep-sushi/Models/Product.php",
+		"/C/projects/deep-sushi/config/db_params.php",
+		"/C/projects/crb/Models/User.php",
+		"/C/projects/crb/Views/second-pair.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/bootstrap/js/item.js",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Views/index.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Views/accordionContent.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Views/header.php",
+		"/C/Users/alexe/Downloads/masters/chipmaster.master-online.com.ua/Views/products.php",
+		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Views/footer.php",
+		"/C/projects/crb/config/db_params.php",
+		"/C/projects/chipmaster.master-online.com.ua/config/routes.php",
+		"/C/projects/chipmaster.master-online.com.ua/bootstrap/css/bootstrap-theme.css",
+		"/C/projects/deep-sushi/Views/products.php",
+		"/C/projects/deep-sushi/.htaccess",
+		"/C/projects/deep-sushi/Views/test.php",
+		"/C/projects/test/Views/js/main.js",
+		"/C/projects/test/Views/index.php",
+		"/C/projects/deep-sushi/Views/sprite.php",
+		"/C/projects/deep-sushi/Views/location",
+		"/C/projects/deep-sushi/Controllers/ProductController.php",
+		"/C/projects/deep-sushi/Views/articles.php",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3333/slider-reviews-customer-site-to-css3/js/main.js",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3333/slider-reviews-customer-site-to-css3/index.html",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3333/slider-reviews-customer-site-to-css3/js/modernizr.js",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3333/slider-reviews-customer-site-to-css3/js/masonry.pkgd.min.js",
+		"/C/projects/deep-sushi/Views/fb_connect.php",
+		"/C/Users/alexe/Downloads/masters/chipmaster.master-online.com.ua/Views/header.php",
+		"/C/Users/alexe/Downloads/masters/chipmaster.master-online.com.ua/Views/index.php",
+		"/C/Users/alexe/Downloads/masters/chipmaster.master-online.com.ua/.htaccess",
+		"/C/projects/deep-sushi/Views/fb_index.php",
+		"/C/projects/deep-sushi/Views/Feedback/fb_index.php",
+		"/C/Users/alexe/Downloads/masters/chipmaster.master-online.com.ua/Views/footer.php",
+		"/C/projects/deep-sushi/Views/feedbacks.php",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3/feedback.html",
+		"/C/projects/deep-sushi/Views/feedback.html",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3/js/main.js",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3/css/reset.css",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3/index.html",
+		"/C/Users/alexe/Downloads/slider-reviews-customer-site-to-css3/css/style.css",
+		"/C/projects/deep-sushi/Views/index.php"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"заказ",
+			"order"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 31.0
+	},
+	"pinned_build_system": "",
+	"project": "myproject.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"16":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"26":
+				{
+					"group": 2,
+					"index": 1
+				},
+				"27":
+				{
+					"group": 1,
+					"index": 0
+				},
+				"28":
+				{
+					"group": 2,
+					"index": 0
+				},
+				"29":
+				{
+					"group": 1,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.382459312839,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.7,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 174.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

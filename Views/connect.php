@@ -15,7 +15,7 @@
             // инициализация плагина
             $.jqCart({
                 buttons: '.add_item',
-                handler: '/Controllers/handler.php',
+                handler: '/order',
                 cartLabel: '.basket',
                 visibleLabel: true,
                 openByAdding: false,
@@ -29,39 +29,6 @@
                 $.jqCart('clearCart'); // очистить корзину
             });
         });
-    </script>
-    <!--Функция отслеживания конверсии ПОКУПКИ Analytics-->
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-834077880/cHNnCKXmjX4QuIncjQM',
-                'value': 40.0,
-                'currency': 'UAH',
-                'transaction_id': '',
-                'event_callback': callback
-            });
-            return false;
-        }
-    </script>
-<!--Функция отслеживания конверсии ЗВОНКА Analytics-->
-    <script>
-        function gtag_report_conversion2(url) {
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-834077880/TxH9CP7TmH4QuIncjQM',
-                'event_callback': callback
-            });
-            return false;
-        }
     </script>
 <!--Маска номера телефона-->
     <script>$(document).ready(function() {

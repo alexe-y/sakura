@@ -161,6 +161,7 @@ Main components
   font-size: 12px;
   font-size: 1rem;
   color: #dedede;
+  text-align: left;
 }
 @media only screen and (min-width: 768px) {
   .cd-author img {
@@ -286,9 +287,9 @@ Main components
 }
 
 .cd-testimonials-all {
-  position: relative;
+  /*position: relative;
   top: 0;
-  left: 0;
+  left: 0;*/
   height: 100%;
   width: 100%;
   background-color: #ffffff;
@@ -300,9 +301,9 @@ Main components
   transition: opacity .3s 0s, visibility 0s .3s;
 }
 .cd-testimonials-all .cd-testimonials-all-wrapper {
-  position: absolute;
+  /*position: absolute;
   left: 0;
-  top: 0;
+  top: 0;*/
   height: 100%;
   width: 100%;
   overflow: auto;
@@ -474,3 +475,69 @@ Main components
   margin: auto;
   }
 }
+.btn{
+    padding: 5px 1px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    line-height: 1.25;
+    border-color: #25282a;
+    color: inherit;
+  background: transparent;
+    cursor: pointer;
+    transition: .4s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.btn-feedback{
+    width: 100%;
+    z-index: 10;
+}
+.btn-feedback:hover{
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.btn-feedback:before{
+    position: absolute;
+    background-color: #ff253a;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    content: ' ';
+    visibility: hidden;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform: scaleY(0);
+}
+.btn-feedback:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+}
+.btn-feedback:before{
+    position: absolute;
+    z-index: -1;
+    background-color: #ff253a;
+}
+
+@media screen and (max-width: 640px){
+    .btn-feedback:hover{
+    letter-spacing: normal;
+    color: #fff;
+    }
+} 

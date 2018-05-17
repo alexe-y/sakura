@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114659457-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-834077880');
-        gtag('config', 'UA-114659457-1');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WS5PH58');</script>
+    <!-- End Google Tag Manager -->
 
     <title>Доставка Суши в Житомире - Sakura Sushi</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="Views/img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/Views/img/favicon.ico" />
      <meta name=’description’ content=’Доставка вкусных суши в Житомире на дом или в офис. Стоимость доставки 40грн по городу, от 400грн - бесплатно. Закажи ролл дня со скидкой 10%’ >
     <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом, доставка суши, суши доставка, суші, суши в Житомирі’>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -26,6 +24,11 @@
 
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WS5PH58"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <link href="/Views/css/header.css" rel="stylesheet" type="text/css" />
 <?php include ROOT.'/Views/sprite.php';?> 
 <header>
@@ -36,7 +39,7 @@
             <div class="place header-item" ><svg class="svg-icon">
                         <use xlink:href="#clock" />
                     </svg>&nbsp;11:00 - 24:00</div>        
-            <div class="logo header-item"><img src="/Views/img/logo-light.png" alt="Sakura"></div>
+            <div class="logo header-item"><img src="/Views/img/logo.svg" alt="Sakura"></div>
         
             <div class="tel header-item" ><svg class="svg-icon">
                         <use xlink:href="#call" />

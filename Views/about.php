@@ -15,7 +15,7 @@
             <use xlink:href="#clock" />
         </svg>
     </div>
-     <div class="pic-item">График сегодня:</div> <div class="pic-item">11:00 - 23:00</div></div>
+     <div class="pic-item">График сегодня:</div> <div class="pic-item">12:00 - 23:00</div></div>
 </div>
 <section id="features">
         <div class="features-wrap">
@@ -43,7 +43,7 @@
                     </svg></div>
                 <div class="feature-content">
                     <h4 class="feature-title">Дарим радость</h4>
-                    <p class="feature-text">Доставка по городу 40грн. При заказе от 400грн - бесплатно</p>
+                    <p class="feature-text">Доставка по городу 40грн. При заказе от 300грн - бесплатно</p>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@
             // инициализация плагина
             $.jqCart({
                 buttons: '.add_item',
-                handler: '/Controllers/handler.php',
+                handler: '/order',
                 cartLabel: '.basket',
                 visibleLabel: true,
                 openByAdding: false,

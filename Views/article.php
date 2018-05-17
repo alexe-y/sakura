@@ -9,7 +9,7 @@
               </h2>
           </div>
           <div class="articles-text">
-              <?=substr($article["text"], 0, strpos($article["text"], ' ', 1300)).'...';?>
+              <!-- <?=substr($article["text"], 0, strpos($article["text"], ' ', 700)).'...';?> -->
           </div>
           <div class="articles-footer">
               <span><?=$article['date']?></span>

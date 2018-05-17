@@ -21,7 +21,7 @@
     cartLabel: 'body',
     visibleLabel: false,
     openByAdding: false,
-    handler: '/sendOrder',
+    handler: '/order',
     currency: '$'
   };
   var actions = {
@@ -131,7 +131,7 @@
         totalCnt += amount;
       });
         
-        if(subtotal < 400){
+        if(subtotal < 300){
             subtotal = subtotal + 40;
             $(".delivery strong").text("40грн");
         } else {
@@ -191,7 +191,7 @@
         
       $(modal).appendTo('body').find('.jqcart-checkout').html(cartHtml);
         //actions.recalcSum();
-        if(subtotal < 400){
+        if(subtotal < 300){
             subtotal = subtotal + 40;
             $(".jqcart-subtotal strong").text(subtotal);
             $(".delivery strong").text("40грн");
@@ -243,7 +243,6 @@
         },
         success: function(resp) {
           console.log("заказ принят");
-          gtag_report_conversion();
           $('.jqcart-checkout').html('<h2 class="jqcart-success">Спасибо!<br> Ваш заказ принят.</h2>');
             if(!resp.errors) {
                 setTimeout(methods.clearCart, 2000);

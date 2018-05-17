@@ -9,7 +9,7 @@
             </div>
             <div class="footer-block">
                 <a href="#features" class="footer-logo footer-item">
-                    <img src="/Views/img/logo-light.png" alt="logo">
+                    <img src="/Views/img/logo.svg" alt="logo">
                 </a>
             </div>
             <div class="footer-block">
