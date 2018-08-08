@@ -6,7 +6,7 @@
     <script src="/Views/js/jquery.mask.min.js"></script>
     <script src="/Views/js/developer/jqcart.js"></script>
     <script src="/Views/js/masonry.pkgd.min.js"></script>
-
+    <script src="/Views/js/feedback.js"></script>
     <script>
         $(function(){
             'use strict';

@@ -18,7 +18,7 @@
                 handler: '/order',
                 cartLabel: '.basket',
                 visibleLabel: true,
-                openByAdding: false,
+                openByAdding: true,
                 currency: 'грн.'
             });
             // Пример с дополнительными методами
@@ -29,6 +29,12 @@
                 $.jqCart('clearCart'); // очистить корзину
             });
         });
+    </script>
+    <script type="text/javascript">
+        if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
+            {
+               $(".pic-wrapper").addClass("safari");
+            }
     </script>
 <!--Маска номера телефона-->
     <script>$(document).ready(function() {

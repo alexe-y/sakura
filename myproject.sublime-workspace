@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"user",
+				"userAgent"
+			],
+			[
+				"de",
+				"deliveryCost"
+			],
+			[
+				"to",
+				"totalSum"
+			],
+			[
+				"c",
+				"currency"
+			],
+			[
 				"tex",
 				"text-align"
 			],
@@ -38,10 +54,6 @@
 			[
 				"m",
 				"minBuy"
-			],
-			[
-				"c",
-				"courses"
 			],
 			[
 				"co",
@@ -244,6 +256,23 @@
 	"buffers":
 	[
 		{
+			"file": "Controllers/OrderController.php",
+			"settings":
+			{
+				"buffer_size": 5883,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Models/Order.php",
+			"settings":
+			{
+				"buffer_size": 1153,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"contents": "",
 			"settings":
 			{
@@ -328,19 +357,27 @@
 	},
 	"expanded_folders":
 	[
-		"/C/projects/deep-sushi",
-		"/C/projects/deep-sushi/config",
-		"/C/projects/deep-sushi/Controllers",
-		"/C/projects/deep-sushi/Models",
-		"/C/projects/deep-sushi/Views",
-		"/C/projects/deep-sushi/Views/Article",
-		"/C/projects/deep-sushi/Views/css",
-		"/C/projects/deep-sushi/Views/Feedback",
-		"/C/projects/deep-sushi/Views/js",
-		"/C/projects/deep-sushi/Views/js/developer"
 	],
 	"file_history":
 	[
+		"/C/projects/deep-sushi/Models/Client.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/Order.php",
+		"/C/projects/masters/Models/Item.php",
+		"/C/projects/public-masters/Controllers/LandingController.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-3/db_params.php",
+		"/C/projects/masters/Models/Client.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/Bleutrade.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/Exmo.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/Currency.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/Zb.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/CurrencyController.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/script.js",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/style.css",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/projects/deep-sushi/Controllers/OrderController.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/left-column.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/second-pair.php",
+		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/currency-info.php",
 		"/C/projects/deep-sushi/Views/js/developer/jqcart.js",
 		"/C/projects/deep-sushi/Views/js/main.js",
 		"/C/projects/deep-sushi/Views/connect.php",
@@ -358,7 +395,6 @@
 		"/C/projects/deep-sushi/Views/css/article.css",
 		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/LandingController.php",
 		"/C/Users/alexe/AppData/Local/Temp/fz3temp-2/promo.php",
-		"/C/projects/deep-sushi/Controllers/OrderController.php",
 		"/C/projects/deep-sushi/Controllers/handler.php",
 		"/C/projects/deep-sushi/Models/Order.php",
 		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Models/Client.php",
@@ -384,7 +420,6 @@
 		"/C/projects/deep-sushi/Views/feedback.php",
 		"/C/projects/deep-sushi/Models/Feedback.php",
 		"/C/projects/deep-sushi/Controllers/FeedbackController.php",
-		"/C/projects/deep-sushi/Models/Client.php",
 		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Controllers/CashController.php",
 		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Models/Item.php",
 		"/C/Users/alexe/Downloads/masters/disar.master-online.com.ua/Controllers/ItemController.php",
@@ -449,7 +484,7 @@
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -463,6 +498,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"total_",
+			"total",
+			"currency",
+			"info",
+			"minD",
+			"this",
 			"заказ",
 			"order"
 		],
@@ -482,37 +523,33 @@
 	"groups":
 	[
 		{
-			"sheets":
-			[
-			]
-		},
-		{
 			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "Controllers/OrderController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 5883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2257,
+								2257
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 972.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -520,27 +557,29 @@
 				},
 				{
 					"buffer": 1,
+					"file": "Models/Order.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1153,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								548,
+								548
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -577,11 +616,73 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"semi_transient": false,
 					"settings":
 					{
@@ -613,7 +714,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -662,13 +763,13 @@
 	},
 	"output.xdebug":
 	{
-		"height": 31.0
+		"height": 32.0
 	},
 	"pinned_build_system": "",
 	"project": "myproject.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -784,7 +885,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 174.0,
+	"side_bar_width": 134.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

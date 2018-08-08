@@ -231,6 +231,10 @@ header{
     width: 100%;
     display: none;
 }
+.jqcart-checkbox{
+    margin-left: 2%;
+    padding: 3px;
+}
 .jqcart-orderform p{
     display: flex;
     margin: 10px 0;
@@ -240,14 +244,14 @@ header{
 }
 .jqcart-orderform p input,
 .jqcart-orderform p textarea{
-    flex: 0 0 70%;
+    flex: 0 0 100%;
     border: 1px solid #cccccc; 
    border-radius: 3px; 
    -webkit-border-radius: 3px; 
    -moz-border-radius: 3px; 
    -khtml-border-radius: 3px; 
    background: #ffffff !important; 
-   padding: 0 5px;
+   padding: 5px;
 }
 .jqcart-orderform p input:focus,
 .jqcart-orderform p textarea:focus{
@@ -334,7 +338,12 @@ iframe{
     bottom: 10px;
     left: 5%;
 }
-
+.close-cart{
+    left: 5%;
+    padding: 15px 1px;
+    width: 30%;
+    bottom: 50px;
+}
 .btn-primary:hover{
     letter-spacing: 1px;
     color: #fff;

@@ -70,6 +70,11 @@ $(document).ready(function(){
 	});
      $(".svg-border").on("click", function (event) {
         $(".map-content").addClass('hide');
+        $(".map-corner").removeClass('hidden');
+    });
+     $(".map-corner").on("click", function (event) {
+        $(".map-content").removeClass('hide');
+        $(".map-corner").addClass('hidden');
     });
 //Слайдер отзывов
     $('.cd-testimonials-wrapper').flexslider({

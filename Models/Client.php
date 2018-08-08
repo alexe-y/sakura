@@ -1,18 +1,36 @@
 <?
 class Client
 {
-    public static function addClient($name, $phone, $email='', $add_date){
+    public static function addClient($name, $phone, $email='', $address=''){
+        $userAgent=$_SERVER['HTTP_USER_AGENT'];
+        $userIp=$_SERVER['REMOTE_ADDR'];
         $db=db::getInstance()->db;
-        $result = $db->prepare("INSERT INTO client (name, phone, email, add_date) VALUES (:name, :phone, :email, :add_date)");
+        $result = $db->prepare("INSERT INTO client (name, phone, email, address, ip, agent) VALUES (:name, :phone, :email, :address, :ip, :agent)");
         $result->execute(array(
             'name'=>$name,
             'phone'=>$phone,
+            'address'=>$address,
+            'ip'=>$userIp,
+            'agent'=>$userAgent,
             'email'=>$email,
-            'add_date'=>$add_date,
         ));
-        $id=$db->query('SELECT MAX(id) FROM client');
-        $id=$id->fetch();
-        return $id['MAX(id)'];
+        $client=$db->query('SELECT MAX(id) AS id FROM client');
+        $client=$client->fetch();
+        return $client;
+    }
+    public static function updateClient($id, $name, $address){
+        $userAgent=$_SERVER['HTTP_USER_AGENT'];
+        $userIp=$_SERVER['REMOTE_ADDR'];
+        $db=db::getInstance()->db;
+        $result = $db->prepare("UPDATE client SET name=:name, address=:address, ip=:ip, agent=:agent WHERE id=:id");
+        $result->execute(array(
+            'name'=>$name,
+            'address'=>$address,
+            'ip'=>$userIp,
+            'agent'=>$userAgent,
+            'id'=>$id,
+        ));
+        return $result;
     }
     public static function getClientByPhone($phone)
     {
@@ -26,8 +44,10 @@ class Client
             $client['id'] = $row['id'];
             $client['name'] = $row['name'];
             $client['phone'] = $row['phone'];
-            $client['email'] = $row['email'];
+            $client['address'] = $row['address'];
             $client['date'] = $row['add_date'];
+            $client['ip'] = $row['ip'];
+            $client['agent'] = $row['agent'];
         }
         return $client;
     }

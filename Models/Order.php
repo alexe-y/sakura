@@ -1,21 +1,22 @@
 <?php
 class Order
 {
-    public static function addOrder($orderList, $userdata, $total_sum)
+    public static function addOrder($orderList, $client, $totalSum, $deliveryCost, $comment, $type)
     {
         $db = db::getInstance()->db;
-        $result = $db->prepare('INSERT INTO orders (name_buyer, phone, address, user_comment, summ, order_content) VALUES (:name, :phone, :address,  :user_comment, :summ, :orderlist)');
+        $result = $db->prepare('INSERT INTO orders (client_id, summ, delivery_cost, order_content, user_comment, type) VALUES (:client_id, :summ, :delivery_cost, :orderlist, :comment, :type)');
         $result->execute(array(
-            'name'=>$userdata['user_name'],
-            'phone'=>$userdata['user_phone'],
-            'address'=>$userdata['user_address'],
-            'user_comment'=>$userdata['user_comment'],
-            'summ'=>$total_sum,
+            'client_id'=>$client,
+            'delivery_cost'=>$deliveryCost,
+            'summ'=>$totalSum,
             'orderlist'=>$orderList,
+            'comment'=>$comment,
+            'type'=>$type,
         ));
         return true;
     }
 
+    //test
     public static function updateOrder($order){
         $db=db::getInstance()->db;
         $result = $db->prepare("UPDATE order SET updata_date=:update_date, close_date=:close_date, order_content=:order_content, status_id=:status_id WHERE id=:id");

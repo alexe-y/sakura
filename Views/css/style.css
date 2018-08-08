@@ -46,23 +46,39 @@
          height: 90vh;
     }
 }
+.safari{
+    background-attachment: scroll !important;
+}
+@media screen and (max-width: 430px) {
+.safari{
+    background-attachment: scroll !important;
+    }
+}
 .pic-page {
    margin: auto;
    padding: 0 5px;
 
 }
-.pic-items{
+.pic-column{
+    display: flex;
+    flex-flow: row nowrap;
     height: 20vh;
+     width: 100%;
+     background-color: rgba(255, 37, 58, 0.7);
+    color: white;
+    justify-content: space-around;
+}
+.pic-items{
+    flex: 0 0 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 100%;
-    background-color: rgba(255, 37, 58, 0.7);
-    color: white;
 }
 .pic-item{
     flex: 0 0 auto;
     margin: auto;
+    text-align: center;
 }
 .pic-item .svg-icon{
     fill: #fff;
@@ -70,9 +86,9 @@
 #pic-logo {
     background: url(/Views/img/logo.svg) no-repeat center center;
     background-size: contain;
-    height: 25vh;
+    height: 35vh;
     margin: 2% auto;
-    width: 300px;
+    width: auto;
     display: flex;
 }
 
@@ -152,7 +168,7 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
     /* width: 40%; */
     height: 9vh;
-    margin: 7% auto;
+    margin: 6% auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,6 +254,16 @@
     #features {
         padding: 70px 0;
     }
+}
+.promo-pic {
+   display: flex;
+   margin: auto;
+    height: 200px;
+    width: auto;
+    background-image: url("/Views/img/_MG_8982-min_500x370.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 /******************/
 section#category{
@@ -411,6 +437,13 @@ section#category{
     background-color: rgba(255, 37, 58, 0.7);
     padding: 10vh 5px 0 5px;
 }
+.map-corner{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 37, 58, 0.7);
+    padding: 10vh;
+}
 .text_small{
     color: white;
     font-size: 1.2em;
@@ -436,11 +469,17 @@ section#category{
     width: 50%;
     margin: auto;
 }
+#map .map-corner .svg-border{
+    bottom: 0;
+}
+#map .map-corner .svg-icon{
+    height: 100%;
+    width: 50%;
+}
 .hide{
     animation: remove 0.5s linear 0s 1 forwards;
  -webkit-animation: remove 0.5s linear 0s 1 forwards;
 }
- 
 @-webkit-keyframes remove{
  0% {opacity: 1;
  max-height: 1000px;}
@@ -474,4 +513,7 @@ section#category{
 @keyframes poof{
  from {display: flex;}
  to {display: none;}
+}
+.hidden{
+    display: none;
 }

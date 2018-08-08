@@ -15,7 +15,7 @@
     visibleLabel = false,
     label = $('<div class="jqcart-cart-label"><span class="jqcart-title"> <svg id="animate" class="svg-icon"><use xlink:href="#shopping-bag" /></svg> </span> &nbsp;<span class="jqcart-total-cnt"> 0</span></div>'),
       modal = '<div id="overlay"></div><div id="modal_form" class="jqcart-layout" ><div class="jqcart-checkout"></div></div>',
-    orderform = '<div id="form2"><p class="jqcart-cart-title-no">Контактная информация:</p><form class="jqcart-orderform"><p><label>ФИО:</label><input type="text" name="user_name"></p><p><label>Телефон:</label><input type="text" id="user_phone" name="user_phone"></p><p><label>Адрес:</label><input type="text" name="user_address"></p><p><label>Коментарий:</label><textarea name="user_comment"></textarea></p><p><button type="submit" class="btn btn-primary btn-basket">Отправить заказ</button></p></form></div>';
+    orderform = '<div id="form2"><p class="jqcart-cart-title-no">Контактная информация:</p><form class="jqcart-orderform"><p><input placeholder="ФИО" type="text" name="user_name"></p><p><input placeholder="Телефон (098) 876 54 32" type="phone" id="user_phone" name="user_phone"></p><p><input placeholder="Адрес" type="text" name="user_address"></p><p><textarea placeholder="Комментарий к заказу" name="user_comment"></textarea></p><p><button type="submit" name="submit" class="btn btn-primary btn-basket">Отправить заказ</button></p></form></div>';
   var opts = {
     buttons: '.add_item',
     cartLabel: 'body',
@@ -41,7 +41,7 @@
         .find('.jqcart-total-cnt').text(totalCnt);
       $(document)
         .on('click', opts.buttons, actions.addToCart)
-        .on('click', '#overlay', function(e) {
+        .on('click', '#overlay, .close', function(e) {
           if (e.target === this) {
             actions.hideCart();
           }
@@ -183,11 +183,12 @@
 //        } else {
 //            $(".delivery").css( "display", "none" );
 //        }
-        
+      // orderPreview += '<div class="jqcart-checkbox"><label for="">Заберу самостоятельно </label><input name="not-delivery" type="checkbox"></div>';
+      orderPreview += '<button type="button"  class="btn btn-primary close close-cart" name="button"><-Назад</button>';
       orderPreview += '<div class="jqcart-subtotal">Всего: <strong>' + subtotal + '</strong> ' + opts.currency + '</div>';
       orderPreview += '<button type="button" id="to-form2" class="btn btn-primary btn-basket" name="button">Оформить заказ</button></div>';
       
-      cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">Корзина пуста</h2>';
+      cartHtml = subtotal ? (orderPreview + orderform) : '<h2 class="jqcart-empty-cart">Корзина пуста ;(</h2> <button type="button"  class="btn btn-primary btn-basket close close-empty" name="button">К покупкам</button>';
         
       $(modal).appendTo('body').find('.jqcart-checkout').html(cartHtml);
         //actions.recalcSum();
@@ -200,7 +201,7 @@
         }
     },
       hideCart: function() {
-          $('.jqcart-layout, #overlay').fadeOut('fast', function() {
+          $('#modal_form, #overlay').fadeOut('fast', function() {
               $(this).remove();
           });
           return false;

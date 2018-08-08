@@ -35,10 +35,10 @@
             <div class="place header-item" id="place"><a href="#map"><svg class="svg-icon">
                         <use xlink:href="#pin" />
                     </svg></a><span class="place">&nbsp;Житомир</span></div>
-            <div class="place header-item" ><svg class="svg-icon">
+             <div class="place header-item" ><svg class="svg-icon">
                         <use xlink:href="#clock" />
-                    </svg>&nbsp;11:00 - 24:00</div>        
-            <div class="logo header-item"><a href="/"><img src="/Views/img/logo-light.png" alt="Sakura"></a></div>
+                    </svg>&nbsp;<?=$shedule['from']?> - <?=$shedule['to']?></div>   
+            <div class="logo header-item"><a href="/"><img src="/Views/img/logo.svg" alt="Sakura"></a></div>
         
             <div class="tel header-item" ><svg class="svg-icon">
                         <use xlink:href="#call" />

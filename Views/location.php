@@ -12,4 +12,11 @@
             <p style="color: white; font-size: 1.2em; margin-top: 15%;">НА КАРТЕ</p>
         </div> 
 </div>
+<div class="map-corner hidden">
+           <div class="svg-border">
+            <svg class="svg-icon">
+                <use xlink:href="#pin" />
+            </svg>
+        </div> 
+</div>
 </section>

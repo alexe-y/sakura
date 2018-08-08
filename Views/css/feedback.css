@@ -154,14 +154,12 @@ Main components
   line-height: 1.5;
 }
 .cd-author .cd-author-info li:first-child {
-  font-size: 14px;
-  font-size: 1.5rem;
+  font-size: 1.3em;
 }
 .cd-author .cd-author-info li:last-child {
-  font-size: 12px;
-  font-size: 1rem;
+  font-size: 1.2em;
   color: #dedede;
-  text-align: left;
+  /*text-align: left;*/
 }
 @media only screen and (min-width: 768px) {
   .cd-author img {
@@ -172,12 +170,10 @@ Main components
     line-height: 1.6;
   }
   .cd-author .cd-author-info li:first-child {
-    font-size: 16px;
-    font-size: 1.5rem;
+    font-size: 1.2em;
   }
   .cd-author .cd-author-info li:last-child {
-    font-size: 14px;
-    font-size: 1rem;
+    font-size: 1.2em;
   }
 }
 
@@ -294,7 +290,7 @@ Main components
   width: 100%;
   background-color: #ffffff;
   z-index: 2;
-  visibility: hidden;
+  visibility: visible;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
@@ -343,6 +339,7 @@ Main components
   line-height: 1.4;
   border-radius: 0.25em;
   margin-bottom: 1em;
+  font-size: 1.3em;
 }
 .cd-testimonials-all p::after {
   /* creating the triangle in css */
@@ -459,10 +456,10 @@ Main components
    -moz-border-radius: 3px; 
    -khtml-border-radius: 3px; 
    background: #ffffff !important; 
-   padding: 0 5px;
+   padding: 5px 5px;
    width: 70%;
 }
-.feedback-wrapper>button{
+.feedback-wrapper>.button-wrapper{
   width: 70%;
   margin: auto;
 }
@@ -470,8 +467,17 @@ Main components
   .feedback-wrapper>input, .feedback-wrapper>textarea {
     width:50%;
   }
-  .feedback-wrapper>button{
+  .feedback-wrapper>.button-wrapper{
   width: 50%;
+  margin: auto;
+  }
+}
+@media screen and (max-width: 830px) {
+  .feedback-wrapper>input, .feedback-wrapper>textarea {
+    width:90%;
+  }
+  .feedback-wrapper>.button-wrapper{
+  width: 90%;
   margin: auto;
   }
 }
@@ -534,10 +540,111 @@ Main components
     z-index: -1;
     background-color: #ff253a;
 }
-
+.button-wrapper{
+  font-size: 1.3em;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+}
 @media screen and (max-width: 640px){
     .btn-feedback:hover{
     letter-spacing: normal;
     color: #fff;
     }
 } 
+.stars{
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+}
+/*sprite with stars*/
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background: url('/Views/img/star.png') no-repeat;
+}
+
+#reviewStars-input {
+  position: relative;
+  display: flex;
+  margin: auto;
+  flex-direction: row-reverse;
+}
+
+#reviewStars-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  
+  width: 43px;
+  height: 40px;
+  
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#reviewStars-input input:checked ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#reviewStars-input label {
+  background-position: 0 0;
+  height: 40px;
+  width: 43px;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#reviewStars-input #star-0 {
+  left: 0px;
+}
+#reviewStars-input #star-1 {
+  left: 53px;
+}
+#reviewStars-input #star-2 {
+  left: 106px;
+}
+#reviewStars-input #star-3 {
+  left: 159px;
+}
+#reviewStars-input #star-4 {
+  left: 212px;
+}
+#reviewStars-input #star-5 {
+  left: 265px;
+}
+#feedback-hidden{
+  display: none;
+}
+.star-info{
+  
+  margin-bottom: 5px;
+}
+.star-info svg{
+  fill: #e65f64;
+  margin-right: 5px;
+}
+.spinner{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0.7;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    background:  url('/Views/img/spinner.gif') center no-repeat;
+    z-index: 2;
+}
