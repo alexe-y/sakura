@@ -14,9 +14,9 @@
 
                     <div class="burgers-item">
                         <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
-                        <h6 class="item-title">
-                            <a href="#"><?echo $product['title']?></a>
-                        </h6>
+                        <h3 class="item-title">
+                            <?echo $product['title']?>
+                        </h3>
                         <p class="item-ingr"><?echo $product['description']?> <?echo $product['weight']?>г.</p>
                         <div class="item-price">
                             <div class="price"><?echo $product['price']?> грн.</div>
@@ -45,9 +45,9 @@
 
                     <div class="burgers-item">
                         <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
-                        <h6 class="item-title">
-                            <a href="#"><?echo $product['title']?></a>
-                        </h6>
+                        <h3 class="item-title">
+                           <?echo $product['title']?>
+                        </h3>
                         <p class="item-ingr"><?echo $product['description']?> <?echo $product['weight']?>г.</p>
                         <div class="item-price">
                             <div class="price"><?echo $product['price']?> грн.</div>
@@ -92,9 +92,9 @@
 
                     <div class="burgers-item">
                         <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
-                        <h6 class="item-title">
-                            <a href="#"><?echo $product['title']?></a>
-                        </h6>
+                        <h3 class="item-title">
+                            <?echo $product['title']?>
+                        </h3>
                         <p class="item-ingr"><?echo $product['description']?> <?echo $product['weight']?>г.</p>
                         <div class="item-price">
                             <div class="price"><?echo $product['price']?> грн.</div>
@@ -122,9 +122,9 @@
 
                     <div class="burgers-item">
                         <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
-                        <h6 class="item-title">
-                            <a href="#"><?echo $product['title']?></a>
-                        </h6>
+                        <h3 class="item-title">
+                            <?echo $product['title']?>
+                        </h3>
                         <p class="item-ingr"><?echo $product['description']?> <?echo $product['weight']?>г.</p>
                         <div class="item-price">
                             <div class="price"><?echo $product['price']?> грн.</div>
@@ -151,9 +151,9 @@
                 <?if($product['cat_id']==25):?>
                     <div class="burgers-item">
                         <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
-                        <h6 class="item-title">
-                            <a href="#"><?echo $product['title']?></a>
-                        </h6>
+                        <h3 class="item-title">
+                            <?echo $product['title']?>
+                        </h3>
                         <p class="item-ingr"><?echo $product['description']?> <?echo $product['weight']?>г.</p>
                         <div class="item-price">
                             <div class="price"><?echo $product['price']?> грн.</div>
@@ -181,9 +181,9 @@
 
                             <div class="burgers-item">
                                 <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
-                                <h6 class="item-title">
-                                    <a href="#"><?echo $product['title']?></a>
-                                </h6>
+                                <h3 class="item-title">
+                                    <?echo $product['title']?>
+                                </h3>
                                 <p class="item-ingr"><?echo $product['description']?> <?echo $product['weight']?>г.</p>
                                 <div class="item-price">
                                     <div class="price"><?echo $product['price']?> грн.</div>
@@ -212,9 +212,9 @@
 
                             <div class="burgers-item">
                                 <img width="288" height="192" src="/Views/img/<?echo $product['image_url']?>" alt="<?echo $product['title']?>" >
-                                <h6 class="item-title">
-                                    <a href="#"><?echo $product['title']?></a>
-                                </h6>
+                                <h3 class="item-title">
+                                    <?echo $product['title']?>
+                                </h3>
                                 <p class="item-ingr"><?echo $product['description']?> <?echo $product['weight']?>г.</p>
                                 <div class="item-price">
                                     <div class="price"><?echo $product['price']?> грн.</div>

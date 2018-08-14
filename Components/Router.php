@@ -45,7 +45,9 @@ class Router
                 if (file_exists($controllerFile)) {
                     include_once($controllerFile);
                 }
-                //else {Router::Error404();}
+                else {
+                    Router::Error404();
+                }
                 // Создать обьект, вызвать action
                 $controllerObject = new $controllerName;
                 $result= call_user_func_array(array($controllerObject, $actionName), $parameters);
@@ -56,12 +58,16 @@ class Router
 
         }
         if ($result==0){
-                include_once ROOT. '/Controllers/LandingController.php';
-                $controllerObject = new LandingController;
-                $controllerObject->actionIndex();
+             Router::Error404();
+                // include_once ROOT. '/Controllers/LandingController.php';
+                // $controllerObject = new LandingController;
+                // $controllerObject->actionIndex();
 
         }
 
+    }
+    private static function Error404(){
+        include_once ROOT. '/Views/404.php';
     }
 
 }

@@ -45,8 +45,7 @@ class FeedbackController
         else{
             $message='Что-то пошло не так.. =(';
         }
-        echo "LOLLOLOLOLOLO";
-       //echo $message;
+       echo $message;
        return true;
     }
 }

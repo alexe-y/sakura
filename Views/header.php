@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 <head>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -9,11 +9,42 @@
     })(window,document,'script','dataLayer','GTM-WS5PH58');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter48250130 = new Ya.Metrika({
+                        id:48250130,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48250130" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
     <title>Доставка Суши в Житомире - Sakura Sushi</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="/Views/img/favicon.ico" />
-     <meta name=’description’ content="Доставка вкусных суши в Житомире на дом или в офис. Стоимость доставки 40грн по городу, от 300грн - бесплатно. Закажи ролл дня со скидкой 20%" >
-    <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом, доставка суши, суши доставка, суші, суши в Житомирі’>
+    <meta name="description" charset="utf-8" content="Доставка вкусных суши в Житомире на дом или в офис. Стоимость доставки 40грн по городу, от 300грн - бесплатно. Закажи ролл дня со скидкой 20%" />
+    <meta name="keywords" charset="utf-8" content="доставка суши в Житомире"/>
+    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Доставка Суши в Житомире - Sakura Sushi">

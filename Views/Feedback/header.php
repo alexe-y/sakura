@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 <head>
     
     <!-- Google Tag Manager -->
@@ -12,15 +12,16 @@
 
     <title>Доставка Суши в Житомире - Sakura Sushi</title>
     <link rel="shortcut icon" type="image/x-icon" href="/Views/img/favicon.ico" />
-     <meta name=’description’ content=’Доставка вкусных суши в Житомире на дом или в офис. Стоимость доставки 40грн по городу, от 400грн - бесплатно. Закажи ролл дня со скидкой 10%’ >
-    <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом, доставка суши, суши доставка, суші, суши в Житомирі’>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Доставка Суши в Житомире - Sakura Sushi">
-    <meta property="og:description" content="Вкуснейшие роллы с доставкой на дом. Стоимость доставки 40грн по городу, от 400грн - бесплатно. Закажи ролл дня со скидкой 10%">
-    <meta property="og:image" content="sakura.zt.ua/Views/img/SakuraSushi.jpg">
-    <meta property="og:site_name" content="Sakura.zt.ua">
-    <meta property="og:url" content="Sakura.zt.ua">
+    <meta name="description" charset="utf-8" content="Читайте отзывы о доставке суши Сакура в Житомире. Понравились суши? Оставьте свой отзыв!" />
+    <meta name="keywords" charset="utf-8" content="Отзывы суши Житомир"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:title" content="Доставка Суши в Житомире - Sakura Sushi"/>
+    <meta property="og:description" content="Вкуснейшие роллы с доставкой на дом. Стоимость доставки 40грн по городу, от 400грн - бесплатно. Закажи ролл дня со скидкой 10%"/>
+    <meta property="og:image" content="sakura.zt.ua/Views/img/SakuraSushi.jpg"/>
+    <meta property="og:site_name" content="Sakura.zt.ua"/>
+    <meta property="og:url" content="Sakura.zt.ua"/>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->

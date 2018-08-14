@@ -59,7 +59,7 @@ h2.articles-title{
   max-height: 50vh;
   width: 100%;
 }
-.articles-image h1.articles-header{
+.articles-image h2.articles-header{
   position: absolute;
   top: 20%;
   left:5%;
@@ -90,7 +90,7 @@ h2.articles-title{
       .articles-content>div{
           padding: 5px 20px;
       }
-      .articles-image h1.articles-header{
+      .articles-image h2.articles-header{
         font-size: 1.5em;
       }
       .articles-text {

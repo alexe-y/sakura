@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 <head>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,9 +11,10 @@
 
     <title><?if(isset($article)):?><?=$article['meta_title']?><?else:?>Наш суши-блог - интересно про вкусное<?endif?></title>
     <link rel="shortcut icon" type="image/x-icon" href="/Views/img/favicon.ico" />
-    <meta name='title' content='<?if(isset($article)):?><?=$article['meta_title']?><?else:?>Наш суши-блог - интересно про вкусное<?endif?>'>
-     <meta name=’description’ content=’<?if(isset($article)):?><?=$article['meta_description']?><?else:?>Пишем про нашу доставку суши, чем мы отличаемся от других и много интересных фактов о суши<?endif?>’ >
-    <meta name=’keywords’ content=’суши, роллы, доставка еды, доставка суши Житомир, доставка роллов, заказать еду, еда на дом, доставка суши, суши доставка, суші, суши в Житомирі’>
+    <meta name="title" content="<?if(isset($article)):?><?=$article['meta_title']?><?else:?>Cуши-блог - интересно про вкусное<?endif?>"/>
+     <meta name="description" content="<?if(isset($article)):?><?=$article['meta_description']?><?else:?>Пишем про нашу доставку суши, чем мы отличаемся от других и много интересных фактов о суши<?endif?>" />
+    <meta name="keywords" content="интересно про суши"/>
+    
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Узнайте 7 преимуществ нового сервиса «Сакура Суши» в Житомире и закажите доставку излюбленных блюд японской кухни. Отличное суши-меню, свежие продукты, безупречное приготовление. Звоните или заказывайте online">
